@@ -1,0 +1,7 @@
+{
+  "title": "Keypad Enhanced",
+  "type": "tool",
+  "tags": ["roleplay", "build"],
+  "author": "ViridianZe",
+  "ignore": ["resource/fonts/*.txt"]
+}
