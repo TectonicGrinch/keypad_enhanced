@@ -159,8 +159,9 @@ function TOOL:LeftClick(tr)
 end
 
 if CLIENT then
+    local defaultSettings=table.Copy(TOOL.ClientConVar)
     local function ResetSettings(ply)
-        for key,value in pairs(TOOL.ClientConVar) do
+        for key,value in pairs(defaultSettings) do
             RunConsoleCommand('keypad_willox_'..key,value)
         end
         KeypadPrivacy.ResetToolPreferences(false)
